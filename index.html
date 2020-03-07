@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>嘉丽购-嘉丽购电视购物官网-湖南家居购物首选-嘉丽购,正品保障,便捷支付,无忧退换</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--悬浮广告-->
+		<div id="xuanfu" style="display: none;position: fixed;z-index: 1000;bottom: 0;width: 100%;">
+			<div id="colse" style="font-size: 50px;position: absolute;left: 10px;top: 0px;color: white;cursor: pointer;"> × </div>
+			<img src="img/ad1.png" style="width: 100%;" />
+		</div>
+		<!--开头  登录-->
+		<div id="header">
+			<div id="h-box">
+				<div class="h-left">
+					<p class="h-left-p1"><i class="h-tel"></i>电话热线<span class="h-telnum">400-630-0077</span></p>
+				</div>
+				<p class="h-center">
+					<a href="login.html" class="h-c-login">[登录]</a>
+					<a href="register.html" class="h-c-reg">[免费注册]</a>
+				</p>
+				<ul id="h-right">
+					<li>
+						<a href="#">我的嘉</a>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">客户服务</a>
+					</li>
+					<li>
+						<a href="#">电视会员激活</a>
+					</li>
+					<li><i class="h-phone"></i>
+						<a href="#">手机嘉丽购</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--搜索-->
+		<div id="search">
+			<div id="s-search">
+				<a href="#"><img src="img/ladygood.png" /></a>
+				<span class="s-span"></span>
+				<div class="form">
+					<form action="#" method="get">
+						<input type="text" id="find" placeholder="输入商品名称或电视商品编号" />
+						<button id="sumbit"><i class="fangdajing"></i>搜索</button>
+						<!--//<ul id="box"></ul>-->
+					</form>
+				</div>
+				<div class="car">
+					<div class="shopCar">
+						<span><i>0</i></span>
+						<span><a href="http://127.0.0.1/shop-php2/shopcar.html">我的购物车</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--轮播图   导航-->
+		<div id="nav-banner">
+			<!--导航-->
+			<div id="n-nav">
+				<div class="n-topnav">
+					<a href="#" class="active">首页</a>
+					<a href="#">TV直播</a>
+					<a href="#">水果生鲜</a>
+					<a href="#">家居商城</a>
+				</div>
+				<p>订购热线<span>400-630-0077</span></p>
+			</div>
+			<!--轮播图-->
+			<div id="n-banner">
+				<ul class="n-imgLB">
+					<li style="z-index: 2;"><img src="img/bg.jpg" /></li>
+					<li style="z-index: 1;"><img src="img/5ba214c9820f8.jpg" /></li>
+				</ul>
+				<ul class="n-btn" style="z-index: 5;">
+					<li class="active">1</li>
+					<li>2</li>
+				</ul>
+			</div>
+			<!--轮播图上面的div  全部分类-->
+			<div id="n-bannerTop">
+				<div class="n-allshop">
+					<h1>全部商品分类</h1>
+					<ul class="a-sidernav">
+						<li>
+							<div class="a-a2">
+								<a href="#">TV直播</a>
+								<a href="#">水果生鲜</a>
+							</div>
+							<a href="list.html">最新上架</a>
+							<a href="list.html">热销排行</a>
+							<div class="a-sider-hidenav"></div>
+						</li>
+						<li>
+							<a href="list.html" class="a-fontweight">个人美妆</a>
+							<a href="#">全身护理</a>
+							<a href="#">面部护理</a>
+							<a href="#">化妆用品</a>
+							<div class="a-sider-hidenav">
+								<a href="#">面部护理 <span> > </span></a>
+								<a href="#">全身护理 <span> > </span></a>
+								<a href="#">美容工具 <span> > </span></a>
+								<a href="#">美发护发 <span> > </span></a>
+								<a href="#">香水彩妆 <span> > </span></a>
+								<a href="#">口腔护理 <span> > </span></a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">家居日用</a>
+							<a href="#">内衣</a>
+							<a href="#">女装</a>
+							<a href="#">男装</a>
+							<a href="#">男鞋</a>
+							<a href="#">女鞋</a>
+
+							<div class="a-sider-hidenav">
+								<a href="#">木地板 <span> > </span></a>
+								<a href="#">家具 <span> > </span></a>
+								<a href="#">烹饪锅具 <span> > </span></a>
+								<a href="#">厨具刀具 <span> > </span></a>
+								<a href="#">餐饮用具 <span> > </span></a>
+								<a href="#">清洁收纳 <span> > </span></a>
+								<a href="#">家居饰品 <span> > </span></a>
+								<a href="#">日用杂货 <span> > </span></a>
+								<a href="#">卫浴健身 <span> > </span></a>
+
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">食品生鲜</a>
+							<a href="#">项链吊坠</a>
+							<a href="#">手链手镯</a>
+							<a href="#">工艺品</a>
+							<div class="a-sider-hidenav">
+								<a href="#">生鲜食品 <span> > </span></a>
+								<a href="#">酒水茶饮 <span> > </span></a>
+								<a href="#">休闲食品 <span> > </span></a>
+								<a href="#">粮油干货 <span> > </span></a>
+								<a href="#">营养保健 <span> > </span></a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">服装箱包</a>
+							<a href="#">家纺</a>
+							<a href="#">生活用品</a>
+							<a href="#">厨房日用</a>
+							<a href="#">床品</a>
+							<a href="#">套件</a>
+							<div class="a-sider-hidenav">
+								<a href="#">女装 <span> > </span></a>
+								<a href="#">男装 <span> > </span></a>
+								<a href="#">鞋靴 <span> > </span></a>
+								<a href="#">箱包 <span> > </span></a>
+								<a href="#">配饰 <span> > </span></a>
+								<a href="#">户外运动 <span> > </span></a>
+								<a href="#">珍宝藏宝 <span> > </span></a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">布艺家纺</a>
+							<a href="#">五金电器</a>
+							<a href="#">家居电器</a>
+							<a href="#">厨房电器</a>
+							<div class="a-sider-hidenav">
+								<a href="#">床品套装 <span> > </span></a>
+								<a href="#">毛巾被子<span> > </span></a>
+								<a href="#">凉席 <span> > </span></a>
+								<a href="#">枕头 <span> > </span></a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">家电数码</a>
+							<a href="#">健身器材</a>
+							<a href="#">配餐零食</a>
+							<a href="#">红酒白酒</a>
+							<div class="a-sider-hidenav">
+								<a href="#">生活家电 <span> > </span></a>
+								<a href="#">大家电<span> > </span></a>
+								<a href="#">手机通讯 <span> > </span></a>
+								<a href="#">电子数码<span> > </span></a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">母婴用品</a>
+							<div class="a-sider-hidenav">
+								<a href="#">婴幼护理 <span> > </span></a>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="a-fontweight">保险票务</a>
+							<div class="a-sider-hidenav">
+								<a href="#">票务 <span> > </span></a>
+								<a href="#">保险 <span> > </span></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="n-contentRight">
+					<div class="n-cr-left"></div>
+					<div class="n-cr-right">
+						<div class="n-cr-right-top">
+							<h2 class="n-cr-right-top-zhibo">正在直播</h2>
+							<p class="n-cr-right-top-time">[09:40-10:20]</p>
+							<div class="n-cr-right-top-img">
+								<a href="xiangqing.html"><img src="img/5b07e189b35d8.jpg" /></a>
+							</div>
+							<p class="n-cr-right-top-p">科沃斯机器人20周年家有特供组</p>
+							<p class="n-cr-right-top-price"><i>￥</i>399</p>
+						</div>
+
+						<div class="n-cr-right-bottom">
+							<h2>嘉书</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--今日热播  昨日热播-->
+		<div id="dayhot">
+			<div class="d-box">
+				<div class="d-left">
+					<div class="d-title">
+						<span class="d-todayhot">今日热播</span>
+						<span class="d-lastdayhot">昨日热播</span>
+					</div>
+					<div class="d-img"><img src="img/5b922c43ddbc0.jpg" style="width: 190px;height: 334px;" /></div>
+				</div>
+				<div class="d-right">
+					<ul class="d-today">
+						<li style="display: block;">
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a72cd93d7580.jpg" /></div>
+								<p>艾暖艾灸贴30加20升级组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b713ca5d3acf.jpg" /></div>
+								<p>德国进口WEBNER母菊修护洁肤精油</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5afee5228e9ca.jpg" /></div>
+								<p>美康利健颈肩腰腿痛频谱治疗仪</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b1f98eead958.jpg" /></div>
+								<p>澳洲进口ARTHURTILLEY养肤皂</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5ac1fbf9428ff.jpg" /></div>
+								<p>天趣消痛贴60贴加12贴分享组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5af2c1f79e443.jpg" /></div>
+								<p>耶顿香爱懒人紧致腹膜组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5ac44f232a511.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b1f98eead958.jpg" /></div>
+								<p>德国进口WEBNER夜茉莉润肤精油</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b14f84b8e8d6.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a2dedff2878a.jpg" /></div>
+								<p>脐美人排毒贴健康轻松组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b0e68fd9bd90.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b1f98eead958.jpg" /></div>
+								<p>韩后悦光轻透冰爽防晒喷雾</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+						<p class="d-pointleft">
+							< </p>
+								<p class="d-pointright"> > </p>
+					</ul>
+					<ul class="d-today  d-lastday">
+						<li style="display: block;">
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a72cd93d7580.jpg" /></div>
+								<p>汉灸堂智能遥控艾灸仪</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a2dedff2878a.jpg" /></div>
+								<p>日本法藤疗法士膝部按摩健康组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5afee5228e9ca.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b1f98eead958.jpg" /></div>
+								<p>美康利健颈肩腰腿痛频谱治疗仪</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a72d4435bb7c.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a72f01dbc768.jpg" /></div>
+								<p>汉灸堂智能遥控艾灸仪</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5afa756c22572.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b67be17c145f.jpg" /></div>
+								<p>西班牙进口PARDO黄金盛世手工皂</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a606d85afd97.jpg" /></div>
+								<p>鹤年堂经络眼贴健康组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5a2dedff2878a.jpg" /></div>
+								<p>科沃斯机器人20周年家有特供组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5afee5228e9ca.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b1f98eead958.jpg" /></div>
+								<p>鹤年堂经络眼贴健康组</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+						<p class="d-pointleft">
+							< </p>
+								<p class="d-pointright"> > </p>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!--热销推荐-->
+		<div id="hotproduct">
+			<div class="hot-box">
+				<div class="hot-left">
+					<h2>热销推荐</h2>
+					<img src="img/5b922331f1135.jpg" />
+				</div>
+				<div class="hot-right">
+					<ul class="d-today hot-ul">
+						<li style="display: block;">
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/59ffbf6beab14.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b20d9943b35a.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5af41741d2f88.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+							<div class="d-right-pro">
+								<span>[19:00~20:00]</span>
+								<div class="d-right-zb">直播</div>
+								<div><img src="img/5b1171bb5da07.jpg" /></div>
+								<p>姑苏治锦桑蚕长丝被新春迎福组</p>
+								<p>￥2638.00</p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--1F 服装鞋帽-->
+		<div id="onefloor">
+			<div class="o-box">
+				<div class="o-header">
+					<i><img src="img/d.png"/></i>
+					<a href="#">服装鞋帽</a>
+				</div>
+				<div class="o-left">
+					<div class="o-left-nav">
+						<a href="#">丝袜</a>
+						<a href="#">内衣</a>
+						<a href="#">女鞋</a><br />
+						<a href="#">女裤</a>
+						<a href="#">男裤</a>
+						<a href="#">女包</a><br />
+						<a href="#">男鞋</a>
+						<a href="#">女T恤</a>
+						<a href="#">男T恤</a>
+					</div>
+					<div class="o-left-img">
+						<img src="img/5b9224052271e.jpg" />
+					</div>
+				</div>
+				<div class="o-right">
+					<div class="o-right-leftimg">
+						<a href="#">
+							<img src="img/5b9224b751021.jpg" style="width:386px ;height: 520px;" />
+						</a>
+					</div>
+					<div class="o-right-rightlist">
+						<ul class="o-r-r-ul">
+							<li>
+								<a href="#"><img src="img/5acb2d448589f.jpg" /></a>
+								<a href="#">芭比全蕾丝零束缚内衣4+5+2件组</a>
+								<span><i>￥</i>199</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b3b2ebd6feff.jpg" /></a>
+								<a href="#">箴美璀璨星光牛皮女鞋+5+2件组</a>
+								<span><i>￥</i>351</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b14f84b8e8d6.jpg" /></a>
+								<a href="#">极脉清爽休闲女士套装</a>
+								<span><i>￥</i>398</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b0e68fd9bd90.jpg" /></a>
+								<a href="#">箴美菱格纹轻便羊皮女鞋</a>
+								<span><i>￥</i>398</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b23be49a3d20.jpg" /></a>
+								<a href="#">U.S.POLOASSN女士POLO衫组</a>
+								<span><i>￥</i>351</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b7d227334aeb.jpg" /></a>
+								<a href="#">法国恺瑞凡尔赛刺绣雕花皮衣</a>
+								<span><i>￥</i>3680</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--2F 个护美妆-->
+		<div id="onefloor twofloor">
+			<div class="o-box">
+				<div class="o-header">
+					<i><img src="img/floor2.png"/></i>
+					<a href="#">个护美妆</a>
+				</div>
+				<div class="o-left">
+					<div class="o-left-nav">
+						<a href="#">面膜</a>
+						<a href="#">护肤套装</a>
+						<a href="#">染发造型</a><br />
+						<a href="#">洗护套装</a>
+						<a href="#">BB霜</a>
+						<a href="#">香水</a><br />
+						<a href="#">皂</a>
+						<a href="#">乳液面霜</a>
+						<a href="#">眼部护理</a>
+					</div>
+					<div class="o-left-img">
+						<img src="img/59c8aa2575289.jpg" />
+					</div>
+				</div>
+				<div class="o-right">
+					<div class="o-right-leftimg">
+						<a href="#">
+							<img src="img/5b14e5b358ad4.jpg" style="width:386px ;height: 520px;" />
+						</a>
+					</div>
+					<div class="o-right-rightlist">
+						<ul class="o-r-r-ul">
+							<li>
+								<a href="#"><img src="img/5b2b7772ac5ce.jpg" /></a>
+								<a href="#">北京同仁堂冷敷眼贴组</a>
+								<span><i>￥</i>399</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b05325be49c3.jpg" /></a>
+								<a href="#">歌丽姬宝美白祛斑素颜精华霜</a>
+								<span><i>￥</i>299</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b14f84b8e8d6.jpg" /></a>
+								<a href="#">极脉清爽休闲女士套装</a>
+								<span><i>￥</i>398</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5ac44f232a511.jpg" /></a>
+								<a href="#">（自）娇源声波24k黄金棒瘦脸器电动滚轮面部提拉V脸美容仪脸部按摩器</a>
+								<span><i>￥</i>169</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5afa756c22572.jpg" /></a>
+								<a href="#">新西兰纽西小精灵蜂胶牙膏家庭组</a>
+								<span><i>￥</i>298</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b7f6654ec773.jpg" /></a>
+								<a href="#">意大利进口Fillerina丰盈精华</a>
+								<span><i>￥</i>1180</span>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="o-right-bottom">
+					<a href="#">
+						<img src="img/5b9222797fb6b.jpg" />
+					</a>
+				</div>
+			</div>
+
+		</div>
+		<!--3F 食品酒水运动保健-->
+		<div id="onefloor  threefloor">
+			<div class="o-box">
+				<div class="o-header">
+					<i><img src="img/floor3.png"/></i>
+					<a href="#">食品酒水</a>
+					<a href="#">运动保健</a>
+				</div>
+				<div class="o-left">
+					<div class="o-left-nav">
+						<a href="#">大米</a>
+						<a href="#">跑步机</a>
+						<a href="#">按摩器材</a><br />
+						<a href="#">食用油</a>
+						<a href="#">保健品</a>
+						<a href="#">干果/零食</a><br />
+						<a href="#">酒水</a>
+						<a href="#">水果</a>
+					</div>
+					<div class="o-left-img">
+						<img src="img/5b922bfd5ceee.jpg" />
+					</div>
+				</div>
+				<div class="o-right">
+					<div class="o-right-leftimg">
+						<a href="#">
+							<img src="img/5b92254942ca2.jpg" style="width:386px ;height: 520px;" />
+						</a>
+					</div>
+					<div class="o-right-rightlist">
+						<ul class="o-r-r-ul">
+							<li>
+								<a href="#"><img src="img/5b20d7163d508.jpg" /></a>
+								<a href="#">马来西亚妃益冰糖燕窝独供组</a>
+								<span><i>￥</i>879</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5a71cae69de74.jpg" /></a>
+								<a href="#">欧卡姆法国原装进口干红葡萄酒</a>
+								<span><i>￥</i>398</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b713ca5d3acf.jpg" /></a>
+								<a href="#">法国香颂干红十周年专供组</a>
+								<span><i>￥</i>999</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b5ad14a7fee7.jpg" /></a>
+								<a href="#">贵州茅台集团原浆15白酒（三箱）</a>
+								<span><i>￥</i>798</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b7f666bd1413.jpg" /></a>
+								<a href="#">环太高寒黑苦荞茶养生组</a>
+								<span><i>￥</i>599</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5baaf9e12b2e3.jpg" /></a>
+								<a href="#">（自）澄膏阳澄湖大闸蟹礼券2两母10只天资冠玉618型</a>
+								<span><i>￥</i>198</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--4F 家居日用 家用电器-->
+		<div id="onefloor  fourfloor">
+			<div class="o-box">
+				<div class="o-header">
+					<i><img src="img/floor4.png"/></i>
+					<a href="#">家居日用</a>
+					<a href="#">家用电器</a>
+				</div>
+				<div class="o-left">
+					<div class="o-left-nav">
+						<a href="#">床品件套</a>
+						<a href="#">被子</a>
+						<a href="#">清洁用品</a><br />
+						<a href="#">凉席</a>
+						<a href="#">刀具</a>
+						<a href="#">电动工具</a><br />
+						<a href="#">料理/榨汁</a>
+						<a href="#">电饭煲</a>
+						<a href="#">锅具</a>
+					</div>
+					<div class="o-left-img">
+						<img src="img/5b9226c2369dc.jpg" />
+					</div>
+				</div>
+				<div class="o-right">
+					<div class="o-right-leftimg">
+						<a href="#">
+							<img src="img/5b92341c06525.jpg" style="width:386px ;height: 520px;" />
+						</a>
+					</div>
+					<div class="o-right-rightlist">
+						<ul class="o-r-r-ul">
+							<li>
+								<a href="#"><img src="img/5ac1cf9ca4b60.jpg" /></a>
+								<a href="#">（自）北欧欧慕（nathome）三明治机早餐机电饼铛吐司三文治机烤面包机帕尼尼机</a>
+								<span><i>￥</i>199</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b7fb5fdd91ff.jpg" /></a>
+								<a href="#">（券）东芝65英寸曲面4K智能电视</a>
+								<span><i>￥</i>5499</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b7fb2db36062.jpg" /></a>
+								<a href="#">美国惠而浦多功能加热破壁机</a>
+								<span><i>￥</i>999</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5bacfa94705d7.jpg" /></a>
+								<a href="#">北欧欧慕（nathome）多功能电热锅电火锅家用电炒锅不粘锅4L</a>
+								<span><i>￥</i>199</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b83766c04993.jpg" /></a>
+								<a href="#">SIMELO高硼硅电热水壶</a>
+								<span><i>￥</i>263</span>
+							</li>
+							<li>
+								<a href="#"><img src="img/5b76867b00884.jpg" /></a>
+								<a href="#">（龙巍健康富氢饮水机组</a>
+								<span><i>￥</i>2980</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--尾部  footer-->
+		<div id="footer">
+			<div class="f-head">
+				<!--正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付-->
+			</div>
+			<div class="f-help">
+				<div class="f-help-left">
+					<img src="img/jlg_2d.jpg" />
+				</div>
+				<div class="f-help-center">
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<a href="#">新用户指南/激活</a>
+						</dd>
+						<dd>
+							<a href="#">如何订购</a>
+						</dd>
+						<dd>
+							<a href="#">常见问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>会员中心</dt>
+						<dd>
+							<a href="#">会员权益</a>
+						</dd>
+						<dd>
+							<a href="#">美丽积分</a>
+						</dd>
+						<dd>
+							<a href="#">订单查询</a>
+						</dd>
+						<dd>
+							<a href="#">找回密码</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送中心</dt>
+						<dd>
+							<a href="#">物流跟踪</a>
+						</dd>
+						<dd>
+							<a href="#">免运费政策</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付说明</dt>
+						<dd>
+							<a href="#">货到付款</a>
+						</dd>
+						<dd>
+							<a href="#">在线支付</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a href="#">退换货政策</a>
+						</dd>
+						<dd>
+							<a href="#">退换货流程</a>
+						</dd>
+						<dd>
+							<a href="#">安全与保密</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="f-help-right"></div>
+			</div>
+			<div class="f-bottom">
+				<p>
+					<a href="#">商场首页</a> |
+					<a href="#">官网首页</a> |
+					<a href="#">供应商登录</a> |
+					<a href="#">供货联系</a> |
+					<a href="#">收藏我们</a> |
+					<a href="#">公司简介</a> |
+					<a href="#">媒体报道</a> |
+					<a href="#">嘉丽购招聘</a> |
+					<a href="#">官方微博</a> |
+					<a href="#">营业证照</a>
+				</p>
+				<p class="f-p-color">嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved</p>
+				<p class="f-p-color">国家广电总局批号：广局[2010] 278号
+					<a href="#">湘ICP备10203162号-3</a>
+				</p>
+				<p>
+					<a href="#"><img src="img/pic.gif" /></a>
+				</p>
+				<p class="f-b-bottom">
+					<img src="img/kx.jpg" alt="" />
+					<a href="#"><img src="img/360.jpg" /></a>
+					<img src="img/alipay_s.gif" />
+					<a href="#"><img src="img/hn110_s.gif" /></a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	function GetQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r != null) return unescape(r[2]);
+		return null;
+	}
+	var user = GetQueryString("name");
+	if(user) {
+		$('.h-c-login').html('Hi,' + user + '欢迎回嘉！');
+		$('.h-c-reg').html('[退出]').attr('href', 'index.html')
+	} else {
+		//$('.h-c-login').html('[登录]');	
+		$('.h-c-login').html('[登录]');
+
+	}
+	//广告关闭
+	var t = setTimeout(function() {
+		$('#xuanfu').css('display', 'block')
+	}, 1000);
+
+	$('#colse').click(function() {
+		$('#xuanfu').hide()
+	})
+	/*	//搜索框
+		$id("find").onkeyup = function(){
+			var txt = this.value;
+			var sc = create("script");
+			sc.src ="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+txt+"&cb=fn"; 
+			document.body.appendChild(sc);
+		}
+		function fn(msg){
+			console.log( msg );
+			var arr = msg.s;
+			var str = "";
+			for( var i = 0 ; i < arr.length ; i++ ){
+				str += `<li><a href="https://www.baidu.com/s?wd=${arr[i]}">${arr[i]}</a></li>`;
+			}
+			$id("box").innerHTML = str;
+		}*/
+</script>

@@ -1,0 +1,83 @@
+/*头部*/
+#header{width: 100%;}
+.h-top{border-bottom: 1px solid #E8E8E7;background: #f7f7f7;}
+.h-t-nav a:hover{color: #e91456;text-decoration: underline;}
+.h-t-nav{width: 1190px;height: 36px;line-height: 36px;margin: 0 auto;overflow: hidden;display: flex;}
+.h-left{height: 28px;width: 230px;margin-top: 4px;}
+.h-tel{background: url(../img/ind-tel.png) no-repeat;width: 18px;height: 18px;display: inline-block;margin-right: 4px;vertical-align: middle;}
+.h-telnum{color: #e91456;font-size: 14px;font-weight: bold;}
+.h-center{width: 300px;}
+.h-center>a{margin-right: 10px;}
+#h-right{display: flex;height:26px;margin-left: 300px;}
+#h-right>li{margin-right: 6px;}
+#h-right>li>a{width: 80px;}
+#h-right>li:last-of-type{display: flex;}
+#h-right>li>.h-phone{background: url(../img/ind-mobile.png);width: 18px;height: 18px;display: inline-block;margin:9px 1px 0  0;}
+.h-bottom{margin: 0 auto;width: 1190px;height: 74px;margin: 10px auto 0 ;line-height: 74px;position: relative;padding: 23px 0;}
+.h-bottom>a{float: left;}
+.h-tit{ font-family: "Microsoft Yahei";   font-size: 18px;float: left;}
+.h-tit>i{border-left: 1px solid #c9c9c9;padding-right: 15px;}
+/*进度显示
+#jindu{position: absolute;right: 0;width: 530px;border: 1px solid salmon;}
+#jindu>p{width: 130px;background: sandybrown;height: 10px;}*/
+/*购物车*/
+#shopCar{clear: both;width: 1190px;margin: 0 auto;}
+#shopCar>p{font-size: 14px;margin-bottom: 10px;padding-left: 5px;}
+.shoplist{border:1px solid #c9c9c9; ;}
+.s-t-nav{background-color: #eeeeee;border-bottom: 1px solid #c9c9c9;font-size: 14px;height: 40px;line-height: 40px;padding-left: 5px;}
+.s-t-nav>li{float: left;}
+.s-t-nav>li:nth-of-type(1){width: 252px;}
+.s-t-nav>li:nth-of-type(2){width: 310px;}
+.s-t-nav>li:nth-of-type(3){width: 152px;}
+.s-t-nav>li:nth-of-type(4){width: 157px;}
+.s-t-nav>li:nth-of-type(5){width: 152px;}
+.s-t-nav>li:nth-of-type(6){width: 155px;}
+
+
+.s-t-pro img{width: 180px;height: 180px;margin-left: 30px;}
+.s-t-pro{display: flex;border-bottom: 0;background: white; height: 190px;position: relative;}
+.s-t-pro>li{line-height: 190px;}
+.s-t-pro>li{float: left;}
+.s-t-pro>li:nth-of-type(1){width: 252px;}
+.s-t-pro>li:nth-of-type(2){width: 310px;}
+.s-t-pro>li:nth-of-type(3){width: 152px;}
+.s-t-pro>li:nth-of-type(4){width: 157px;}
+.s-t-pro>li:nth-of-type(5){width: 152px;}
+.s-t-pro>li:nth-of-type(6){width: 155px;}
+
+.proname>p{line-height: 20px;font-size: 13px;}
+.proname>p:nth-of-type(1){margin-top: 10px;}
+.proname>p:nth-of-type(1)>a{font-size: 13px;font-weight: bold;color: #444;}
+.proname>p:nth-of-type(1)>a:hover{color: #e91456; text-decoration: underline;}
+.btnCk{cursor: pointer; width: 23px; height: 23px;  display: inline-block;position: absolute;top: 90px;
+background: url(../img/check2.png);}
+/*单选按钮*/
+.ck{cursor: pointer;  height: 23px; width: 23px; z-index: 777; opacity: 0;position: absolute;}
+/*增减*/
+.num{padding: 0 5px;}
+.jiajian{cursor: pointer;vertical-align: middle;    font-size: 26px; }
+/*.jlprice{font-weight: bold;font-size: 14px;}*/
+/*结算*/
+
+.s-t-j-cz{position: relative;width: 800px;height: 30px;line-height: 74px;padding: 0 5px;}
+.s-t-j-cz>label{padding: 0 5px;}
+.s-t-j-cz>span{padding: 0 5px;cursor: pointer;}
+.s-t-jiesuan{width: 1188px;  border: 1px solid #C9C9C9;  height: 130px;   background: #eeeeee;clear: both;position: relative;border-top: 0;}
+.money{position: absolute;right: 0;top: 0;}
+.submit{border-left: 1px solid #ccc;  width: 250px;height: 127px;position: absolute;right: 0;top: 0;}
+#jiesuan{padding:5px 60px;font-weight: bold; border: 1px solid #E21357; font-size: 16px;color: white;     background: #e21357;position: absolute;left: 10px;bottom: 10px;}
+#jiesuan:hover{background: #cc1c23;}
+/*猜你喜欢*/
+#like{width: 1190px;margin: 0 auto;}
+#like>p{font-size: 14px;padding: 10px;}
+.l-ul{    width: 1188px;
+    padding: 0;
+    border: 1px solid #E8E8E7;
+    display: flex;}
+.l-ul img{width: 230px;}
+.l-ul li>p:first-of-type{height: 35px;padding: 5px;}
+.l-ul li>p:last-of-type{color: #e91456;font-size: 14px;}
+.l-ul li a{margin: 5px ;}
+
+.l-ul li:hover{border: 1px solid rgb(152,152,152);}
+.l-ul li{border: 1px solid white;padding: 12px 0;}

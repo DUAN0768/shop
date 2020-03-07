@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>嘉丽购-嘉丽购电视购物官网-湖南家居购物首选-嘉丽购,正品保障,便捷支付,无忧退换</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/list.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<script src="js/public.jsu" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<!--开头  登录-->
+	<div id="header">
+		<div id="h-box">
+			<div class="h-left">
+				<p class="h-left-p1"><i class="h-tel"></i>电话热线<span class="h-telnum">400-630-0077</span></p>
+			</div>
+			<p class="h-center">
+				<a href="login.html">[登录]</a>
+				<a href="register.html">[免费注册]</a>
+			</p>
+			<ul id="h-right">
+				<li>
+					<a href="#">我的嘉</a>
+				</li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li>
+					<a href="#">客户服务</a>
+				</li>
+				<li>
+					<a href="#">电视会员激活</a>
+				</li>
+				<li><i class="h-phone"></i>
+					<a href="#">手机嘉丽购</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--搜索-->
+	<div id="search">
+		<div id="s-search">
+			<a href="#"><img src="img/ladygood.png" /></a>
+			<span class="s-span"></span>
+			<div class="form">
+				<form action="#" method="get">
+					<input type="text" id="find" placeholder="输入商品名称或电视商品编号" />
+					<button id="sumbit"><i class="fangdajing"></i>搜索</button>
+				</form>
+			</div>
+			<div class="car">
+				<div class="shopCar">
+					<span><i class="shopCarnum">0</i></span>
+					<span>我的购物车</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--导航-->
+	<div id="n-nav">
+		<div class="n-allshop">
+			<h1>全部商品分类</h1>
+		</div>
+		<div class="n-topnav">
+			<a href="#" class="active">首页</a>
+			<a href="#">TV直播</a>
+			<a href="#">水果生鲜</a>
+			<a href="#">家居商城</a>
+		</div>
+		<p>订购热线<span>400-630-0077</span></p>
+	</div>
+	<!--侧导航  商品信息-->
+	<div id="msg">
+		<div class="m-topnav">
+			首页 >
+		</div>
+		<div class="m-sidernav">
+			<div class="m-s-nav">
+				<p class="m-s-n-title">个护美妆</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">面部护理</a>
+					</li>
+					<li>
+						<a href="#">全身护理</a>
+					</li>
+					<li>
+						<a href="#">美容工具</a>
+					</li>
+					<li>
+						<a href="#">美发护发</a>
+					</li>
+					<li>
+						<a href="#">香水彩妆</a>
+					</li>
+					<li>
+						<a href="#">口腔护理</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">家居日用</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">木地板</a>
+					</li>
+					<li>
+						<a href="#">家居</a>
+					</li>
+					<li>
+						<a href="#">烹饪工具</a>
+					</li>
+					<li>
+						<a href="#">厨具刀具</a>
+					</li>
+					<li>
+						<a href="#">厨房电器</a>
+					</li>
+					<li>
+						<a href="#">餐饮用具</a>
+					</li>
+					<li>
+						<a href="#">清洁收纳</a>
+					</li>
+					<li>
+						<a href="#">家居饰品</a>
+					</li>
+					<li>
+						<a href="#">日用杂货</a>
+					</li>
+					<li>
+						<a href="#">卫浴健身</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">食品生鲜</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">生鲜食品</a>
+					</li>
+					<li>
+						<a href="#">酒水茶饮</a>
+					</li>
+					<li>
+						<a href="#">休闲食品</a>
+					</li>
+					<li>
+						<a href="#">粮油干货</a>
+					</li>
+					<li>
+						<a href="#">营养保健</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">服装包箱</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">女装</a>
+					</li>
+					<li>
+						<a href="#">男装</a>
+					</li>
+					<li>
+						<a href="#">鞋靴</a>
+					</li>
+					<li>
+						<a href="#">箱包</a>
+					</li>
+					<li>
+						<a href="#">配饰</a>
+					</li>
+					<li>
+						<a href="#">运动户外</a>
+					</li>
+					<li>
+						<a href="#">珍宝藏品</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">布艺家纺</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">床品套件</a>
+					</li>
+					<li>
+						<a href="#">毛巾被子</a>
+					</li>
+					<li>
+						<a href="#">凉席</a>
+					</li>
+					<li>
+						<a href="#">枕头</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">家电数码</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">生活家电</a>
+					</li>
+					<li>
+						<a href="#">大家电</a>
+					</li>
+					<li>
+						<a href="#">手机通讯</a>
+					</li>
+					<li>
+						<a href="#">电子数码</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">母婴用品</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">婴幼护理</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-nav">
+				<p class="m-s-n-title">保险票务</p>
+				<ul class="m-s-n-ul">
+					<li>
+						<a href="#">票务</a>
+					</li>
+					<li>
+						<a href="#">保险</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-s-tese">
+				特色推荐
+			</div>
+			<div class="m-s-list">
+				<ul>
+					<li>
+						<a href="#"><img src="img/5a71d12384ec0.jpg" /></a>
+						<p>尼紧肤多功能美容仪</p>
+						<span>￥189.00</span>
+					</li>
+					<li>
+						<a href="#"><img src="img/59ffbf6beab14.jpg" /></a>
+						<p>波紧肤多功能美容仪</p>
+						<span>￥129.00</span>
+					</li>
+					<li>
+						<a href="#"><img src="img/5bacfa94705d7.jpg" /></a>
+						<p>微肤多功能美容仪</p>
+						<span>￥509.00</span>
+					</li>
+					<li>
+						<a href="#"><img src="img/5b4726b6506d9.jpg" /></a>
+						<p>硕大的大的大萨达多asd</p>
+						<span>￥559.00</span>
+					</li>
+					<li>
+						<a href="#"><img src="img/5b89efa6da746.jpg" /></a>
+						<p>尼蔻微电波紧肤多功能美容仪</p>
+						<span>￥419.00</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="m-right">
+			<div class="m-r-top">
+				<p>分类：<span>全部</span></p>
+				<div style="padding:0 0  15px 15px;">
+					<span>品牌：</span>
+					<p class="nav" style="display: inline-block;">
+						<!--<span>全部</span>
+						<span>朗圣洁</span>-->
+					</p>
+				</div>
+
+			</div>
+			<div class="m-r-center">
+				<ul>
+					<li>排序</li>
+					<li>
+						<a href="#">按销量排序 ↓ </a>
+						<a href="#">按上架时间 ↓ </a>
+						<a href="#">按价格↓ </a>
+					</li>
+					<li>配送类型:</li>
+					<li>
+						<a href="#">嘉丽购配送</a>
+						<a href="#">商家配送</a>
+					</li>
+				</ul>
+			</div>
+			<div id="msgbox">
+				<ul id="list">
+					<!--<li>
+							<a href="#"><img src="img/5af2b4a683d1d.jpg"/></a>
+							<a href="#">尼蔻微电波紧肤多功能美容仪</a>
+							<p><span>￥399.00</span> <span>已售：<i>20</i>件</span></p>
+							<a href="#" class="joinCar">加入购物车</a>
+							<a href="#" class="collect">收藏</a>
+						</li>-->
+				</ul>
+				<div id="box">
+					<span id="left">上一页</span>
+					<ul id="page">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+					<span id="right">下一页</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--猜你喜欢-->
+	<div id="like">
+		<p>猜你喜欢</p>
+		<ul class="l-ul">
+			<!--<li>
+					<a href="#"><img src="img/5a71cae69de74.jpg" /></a>
+					<p>电波紧肤多功能美容仪</p>
+					<p>￥299.00</p>
+					<a href="#" class="joinCar">加入购物车</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/5a71d18529dfc.jpg" /></a>
+					<p>尼蔻微电波能美容仪</p>
+					<p>￥499.00</p>
+					<a href="#" class="joinCar">加入购物车</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/5a72f01dbc768.jpg" /></a>
+					<p>波紧肤多功能美容仪</p>
+					<p>￥349.00</p>
+					<a href="#" class="joinCar">加入购物车</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/5a2dedff2878a.jpg" /></a>
+					<p>尼紧肤多功能美容仪</p>
+					<p>￥149.00</p>
+					<a href="#" class="joinCar">加入购物车</a>
+				</li>
+				<li>
+					<a href="#"><img src="img/5af3d988a08a1.jpg" /></a>
+					<p>电波紧肤多功能美容仪</p>
+					<p>￥129.00</p>
+					<a href="#" class="joinCar">加入购物车</a>
+				</li>-->
+		</ul>
+	</div>
+	<!--尾部 footer-->
+	<div id="footer">
+		<div class="f-head">
+			<!--正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付-->
+		</div>
+		<div class="f-help">
+			<div class="f-help-left">
+				<img src="img/jlg_2d.jpg" />
+			</div>
+			<div class="f-help-center">
+				<dl>
+					<dt>购物指南</dt>
+					<dd>
+						<a href="#">新用户指南/激活</a>
+					</dd>
+					<dd>
+						<a href="#">如何订购</a>
+					</dd>
+					<dd>
+						<a href="#">常见问题</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>会员中心</dt>
+					<dd>
+						<a href="#">会员权益</a>
+					</dd>
+					<dd>
+						<a href="#">美丽积分</a>
+					</dd>
+					<dd>
+						<a href="#">订单查询</a>
+					</dd>
+					<dd>
+						<a href="#">找回密码</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>配送中心</dt>
+					<dd>
+						<a href="#">物流跟踪</a>
+					</dd>
+					<dd>
+						<a href="#">免运费政策</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>支付说明</dt>
+					<dd>
+						<a href="#">货到付款</a>
+					</dd>
+					<dd>
+						<a href="#">在线支付</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>售后服务</dt>
+					<dd>
+						<a href="#">退换货政策</a>
+					</dd>
+					<dd>
+						<a href="#">退换货流程</a>
+					</dd>
+					<dd>
+						<a href="#">安全与保密</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="f-help-right"></div>
+		</div>
+		<div class="f-bottom">
+			<p>
+				<a href="#">商场首页</a> |
+				<a href="#">官网首页</a> |
+				<a href="#">供应商登录</a> |
+				<a href="#">供货联系</a> |
+				<a href="#">收藏我们</a> |
+				<a href="#">公司简介</a> |
+				<a href="#">媒体报道</a> |
+				<a href="#">嘉丽购招聘</a> |
+				<a href="#">官方微博</a> |
+				<a href="#">营业证照</a>
+			</p>
+			<p class="f-p-color">嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved</p>
+			<p class="f-p-color">国家广电总局批号：广局[2010] 278号
+				<a href="#">湘ICP备10203162号-3</a>
+			</p>
+			<p>
+				<a href="#"><img src="img/pic.gif" /></a>
+			</p>
+			<p class="f-b-bottom">
+				<img src="img/kx.jpg" alt="" />
+				<a href="#"><img src="img/360.jpg" /></a>
+				<img src="img/alipay_s.gif" />
+				<a href="#"><img src="img/hn110_s.gif" /></a>
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
+<script type="text/javascript">
+	$('.m-s-nav').click(function () {
+		var index = $(this).index();
+		$(".m-s-n-ul").eq(index).toggle();
+		//$('.m-s-n-ul').hide().eq(index).show();
+	})
+	//分页
+	var index = 1 //当前页码；
+	//ajax获取数据
+	var pageNum = 8; //每一页多少数据
+	console.log("!11")
+
+	ajaxGet('data.json', fn);
+	function fn(msg) {
+		var msg = JSON.parse(msg);
+		//console.log(msg)
+		var str = '';
+		var titleStr = '';
+		for (var attr in msg) {
+			titleStr += `<span cname=${attr}> ${msg[attr].name} </span>`;
+			for (var i = (index - 1) * pageNum; i < index * pageNum; i++) {
+				if (i < msg[attr].list.length) {
+					var pro = msg[attr].list[i];
+					//console.log(pro)
+					str += `
+						<li>
+							<a href="xiangqing.html?id=${pro.id}&name=${pro.name}&src=${pro.src}&price=${pro.price}"><img src="img/${pro.src}"/></a>
+							<a href="xiangqing.html?id=${pro.id}&name=${pro.name}&src=${pro.src}&price=${pro.price}">${pro.name}</a>
+							<p>
+								<span>￥${pro.price}</span>
+								<span>已售：<i>${pro.sell}</i>件</span>
+							</p>
+							<a href="#" class="joinCar" data-name='${pro.name}' data-id='${pro.id}' data-src='${pro.src}' data-price='${pro.price}' >加入购物车</a>
+							<a href="#" class="collect">收藏</a>
+						</li>`
+				}
+			}
+		}
+
+		$('.nav').html(titleStr);
+		$("#list").html(str);
+
+		$('.nav span').click(function () {
+			var cname = $(this).attr('cname');
+			var page = "";
+			for (var attr in msg) {
+				for (var i = (index - 1) * pageNum; i < index * pageNum; i++) {
+					//console.log(msg[cname].list)
+					var pro = msg[cname].list[i];
+					//console.log(pro)
+					page += `<li>
+							<a href="#"><img src="img/${pro.src}"/></a>
+							<a href="#">${pro.name}</a>
+							<p>
+								<span>￥${pro.price}</span>
+								<span>已售：<i>${pro.sell}</i>件</span>
+							</p>
+							<a href="#" class="joinCar" data-name='${pro.name}' data-id='${pro.id}' data-src='${pro.src}' data-price='${pro.price}' >加入购物车</a>
+							<a href="#" class="collect">收藏</a>
+						</li>`
+				}
+				$('#list').html(page)
+			}
+		})
+
+		//页码 b 
+		var allPage = Math.ceil(msg[attr].list.length / pageNum);
+		var pageN = ''
+		for (var i = 1; i <= allPage; i++) {
+			pageN += `<li>${i}</li>`
+		}
+		$('#page').html(pageN);
+		$('#page').children().eq(index - 1).addClass('active');
+	};
+
+	//点击事件 委托方式 分页
+	$('#page').click(function (e) {
+		var e = e || window.event;
+		var target = e.target || e.srcElement;
+		if (target.tagName.toLowerCase('li')) {
+			index = target.innerHTML;
+			ajaxGet('data.json', fn)
+		}
+	})
+	$('#left').click(function () {
+		if (index == 1) {
+			index = 1;
+		} else {
+			index--;
+		}
+		ajaxGet('data.json', fn)
+	})
+	$('#right').click(function () {
+		if (index == 5) {
+			index = 5;
+		} else {
+			index++;
+		}
+		ajaxGet('data.json', fn)
+	})
+	//添加购物车功能
+	//当点击按钮时 将当前商品作为一个对象 存入到数组中
+	//然后再将数组存入到cookie中 （存数组的原因是 用户有可能会买多件商品）
+	//为多个购物车按钮添加单击事件  （因为按钮是动态创建的 ，在ajax的下面使用委托实现）
+
+	$('#list').on('click', '.joinCar', function () {
+		var arr = [];
+		var flag = true;
+		var json = {
+			id: $(this).data('id'),
+			name: $(this).data('name'),
+			price: $(this).data('price'),
+			src: $(this).data('src'),
+			count: 1
+		}
+		//console.log(json)
+		//商品信息添加进同一个arr
+		var brr = getCookie('shoplist')
+		if (brr.length != 0) {
+			arr = brr;
+			for (var i = 0; i < arr.length; i++) {
+				if (json.id == arr[i].id) {
+					arr[i].count++;
+					flag = false;
+				}
+			}
+		}
+
+		//添加商品信息
+		if (flag) {
+			arr.push(json);
+		}
+		setCookie('shoplist', JSON.stringify(arr))
+
+		if (!confirm('确定--继续购物，取消--结算购物车')) {
+			location.href = 'shopcar.html';
+		}
+
+		//console.log(document.cookie)
+
+	})
+
+	//猜你喜欢
+	$.ajax({
+		type: "get",
+		url: "like.json",
+		success: function (msg) {
+			//var titleStr = ""
+			var conStr = ""
+
+			console.log(msg)
+			for (var i = 0; i < msg.length; i++) {
+				console.log(msg)
+				var pro = msg[i];
+				conStr += `
+										<li>
+							<a href="#"><img src="img/${pro.src}"/></a>
+							<a href="#">${pro.name}</a>
+							<p>
+								<span>￥${pro.price}</span>
+								<span>已售：<i>${pro.sell}</i>件</span>
+							</p>
+							<a href="#" class="join" data-name='${pro.name}' data-id='${pro.id}' data-src='${pro.src}' data-price='${pro.price}' >加入购物车</a>
+							<a href="#" class="collect">收藏</a>
+						</li>`
+			}
+
+			$('.l-ul').html(conStr);
+		}
+	});
+	$('.l-ul').on('click', '.join', function (e) {
+		e.stopPropagation()
+		var arr = [];
+		var flag = true;
+		var json = {
+			id: $(this).data('id'),
+			name: $(this).data('name'),
+			price: $(this).data('price'),
+			src: $(this).data('src'),
+			count: 1
+		}
+		//console.log(json)
+		//商品信息添加进同一个arr
+		var brr = getCookie('shoplist')
+		if (brr.length != 0) {
+			arr = brr;
+			for (var i = 0; i < arr.length; i++) {
+				if (json.id == arr[i].id) {
+					arr[i].count++;
+					flag = false;
+				}
+			}
+		}
+
+		//添加商品信息
+		if (flag) {
+			arr.push(json);
+		}
+		setCookie('shoplist', JSON.stringify(arr))
+
+		if (!confirm('确定--继续购物，取消--结算购物车')) {
+			location.href = 'shopcar.html';
+		}
+		//console.log(document.cookie)
+
+	})
+
+
+</script>

@@ -1,0 +1,20 @@
+/*footer*/
+#footer{margin: 0;margin-top: 40px;background: white;font-size: 14px;border-top: 2px solid #e91455;;}
+.f-head{width: 1200px;height: 46px;margin: 0 auto;background: url(../img/foot_info.jpg) no-repeat scroll 0 0;overflow: hidden;/*text-indent: -999px;*/margin: 10px 0;}
+/*二维码*/
+.f-help{width: 100%;height: 150px;padding: 10px;position: relative;}
+.f-help-left{width:200px ;border-right: 1px solid #ccc;height: 150px;}
+.f-help-left>img{margin: 15px 0 0 25px;}
+.f-help-center{border-right: 1px solid #ccc;height: 150px;width: 600px;position: absolute;left: 250px;top: 0;}
+.f-help-center>dl{float: left;margin: 20px;line-height: 30px;  }
+.f-help-center dt{font-size:14px;font-weight: bold;  color: rgb(68, 68, 68);}
+.f-help-center dd {color:#333 ;font-size: 10px;}
+.f-help-center dd>a:hover{color: #e91456;text-decoration: underline;}
+.f-help-right{width: 260px;height: 65px;background: url(../img/call_rz.jpg)no-repeat;position: absolute;top: 35px;right: 90px;}
+.f-bottom{font-size: 12px;height: 150px;margin: 0 auto;background: #f8f8f8;text-align: center;}
+.f-bottom>p>a{line-height: 35px;}
+.f-bottom>p:first-of-type>a:hover{color:#e91456 ;text-decoration: underline;}
+.f-bottom>.f-p-color,.f-bottom>.f-p-color>a{color: #999;}
+.f-bottom>p:nth-of-type(3)>a:hover{text-decoration: underline;}
+.f-bottom>p:nth-of-type(4){margin-top: -10px;height: 27px;}
+.f-bottom>.f-b-bottom img{margin-left:  10px;}

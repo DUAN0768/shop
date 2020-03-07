@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>嘉丽购-嘉丽购电视购物官网-湖南家居购物首选-嘉丽购,正品保障,便捷支付,无忧退换</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div id="header">
+			<div class="h-box">
+				<a href="#"><img src="img/ladygood.png" /></a>
+				<span class="h-tit"><i></i>欢迎注册</span>
+				<div class="h-href">
+					<a href="#">已有账号</a>
+					<a href="login.html">直接登录</a>
+				</div>
+			</div>
+		</div>
+		<!--验证信息 手机-->
+		<div id="register">
+			<form action="register.php" method="post">
+				<div class="l-form">
+					<label for="uname">*用户名:</label><input type="text" name="uname" id="uname" placeholder="输入手机号" /> <span class="tishi"></span><br />
+					<label for="upsw">*设置密码:</label><input type="password" name="upsw" id="upsw" placeholder="创建密码" /> <span class="tishi"></span><br />
+					<label for="urepsw">*确认密码:</label><input type="password" name="urepsw" id="urepsw" placeholder="确认密码" /> <span class="tishi"></span><br />
+					<input type="checkbox" name="uck" id="uck" checked/>
+					<a href="#">我已阅读并同意《嘉丽购物网服务条款》</a><br />
+					<input type="submit" value="提交" id="submit" /><br />
+					<p class="l-f-change">你还可以选择
+						<a href="register_email.html">邮箱注册</a>
+					</p>
+				</div>
+			</form>
+			<div class="l-img">
+				<img src="img/login-bg1.jpg" />
+			</div>
+		</div>
+		<!--尾部 fotter-->
+		<div id="footer">
+			<div class="f-head">
+				<!--正品保证 正品行货 开具发票 快捷配送 严格包装 无损签收 货到付款 支付宝 银联在线支付-->
+			</div>
+			<div class="f-help">
+				<div class="f-help-left">
+					<img src="img/jlg_2d.jpg" />
+				</div>
+				<div class="f-help-center">
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<a href="#">新用户指南/激活</a>
+						</dd>
+						<dd>
+							<a href="#">如何订购</a>
+						</dd>
+						<dd>
+							<a href="#">常见问题</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>会员中心</dt>
+						<dd>
+							<a href="#">会员权益</a>
+						</dd>
+						<dd>
+							<a href="#">美丽积分</a>
+						</dd>
+						<dd>
+							<a href="#">订单查询</a>
+						</dd>
+						<dd>
+							<a href="#">找回密码</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>配送中心</dt>
+						<dd>
+							<a href="#">物流跟踪</a>
+						</dd>
+						<dd>
+							<a href="#">免运费政策</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付说明</dt>
+						<dd>
+							<a href="#">货到付款</a>
+						</dd>
+						<dd>
+							<a href="#">在线支付</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a href="#">退换货政策</a>
+						</dd>
+						<dd>
+							<a href="#">退换货流程</a>
+						</dd>
+						<dd>
+							<a href="#">安全与保密</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="f-help-right"></div>
+			</div>
+			<div class="f-bottom">
+				<p>
+					<a href="#">商场首页</a> |
+					<a href="#">官网首页</a> |
+					<a href="#">供应商登录</a> |
+					<a href="#">供货联系</a> |
+					<a href="#">收藏我们</a> |
+					<a href="#">公司简介</a> |
+					<a href="#">媒体报道</a> |
+					<a href="#">嘉丽购招聘</a> |
+					<a href="#">官方微博</a> |
+					<a href="#">营业证照</a>
+				</p>
+				<p class="f-p-color">嘉丽购物有限责任公司 Copyright 2010-2014 jialigou.All Rights Reserved</p>
+				<p class="f-p-color">国家广电总局批号：广局[2010] 278号
+					<a href="#">湘ICP备10203162号-3</a>
+				</p>
+				<p>
+					<a href="#"><img src="img/pic.gif" /></a>
+				</p>
+				<p class="f-b-bottom">
+					<img src="img/kx.jpg" alt="" />
+					<a href="#"><img src="img/360.jpg" /></a>
+					<img src="img/alipay_s.gif" />
+					<a href="#"><img src="img/hn110_s.gif" /></a>
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	//验证
+	$('form').submit(function() {
+		var reg = /^1[34578]{1}[0-9]{9}$/;
+		if(!reg.test($('#uname').val())) {
+			$('#uname').next().html("请与要求格式一致").css('color', 'red');
+			return false;
+		}
+
+		var reg = /^.{6,}$/;
+		if(!reg.test($('#upsw').val())) {
+			$('#upsw').next().html("请与要求格式一致").css('color', 'red');
+			return false;
+		}
+		if($('#urepsw').val() != $('#upsw').val()) {
+			$('#urepsw').next().html('与原密码不同').css('color', 'red');
+			return false;
+		}
+		return true;
+	})
+</script>
